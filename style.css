@@ -1,0 +1,315 @@
+/* Common Css Start */
+:root {
+    --primary-font: "Poppins", sans-serif;
+    --heading-font: "PT Sans", sans-serif;
+    --font-color: #353535;
+    --button-color: #FFCC00;
+    --hover-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primary-font);
+}
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    width: 1110px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* nav Section  start */
+#nav {
+    padding: 13px 0;
+}
+#nav .menu ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color:var(--font-color);
+    padding: 5px 28px;
+    display: inline-block;
+    position: relative;
+}
+#nav .menu ul li a:hover {
+    border-bottom: 1px solid var(--font-color);
+}
+#nav .menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--font-color);
+    transition: 0.4s;
+}
+#nav .menu ul li a:hover::after,
+#nav .menu ul li a.active::after {
+    left: 0;
+    width: 100%;
+}
+/* nav Section  end */
+/* hero Section  start */
+#hero{
+    padding:119px 0;
+    color:var(--text-color);
+}
+#hero .inner_container{
+    width:538px;
+}
+
+#hero .inner_container h4{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom:15px;
+}
+#hero .inner_container h2{
+    margin-bottom:25px;
+font-weight: 700;
+font-size: 64px;
+
+}
+
+#hero .inner_container p{
+    font-size: 20px;
+    line-height: 190%;
+    margin-bottom:77px;
+}
+#hero .inner_container .contact a{
+    margin-bottom:66px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 209px;
+    height: 69px;
+    display: block;
+    font-size: 20px;
+    line-height: 180%;
+    transition:0.5s;
+    color: #353535;
+    margin-right: 20px;
+}
+#hero .inner_container .contact a:hover{
+    color: #fff;
+    background-color: var(--button-color);
+}
+#hero .inner_container .text{
+    margin-right:32px;
+}
+
+#hero .inner_container .text  a{
+    font-weight: 600;  
+    padding:18px 45px;
+} 
+
+#hero .inner_container .download a{
+    padding: 16px 18px;
+    font-weight: 500;
+    margin-right:13px;
+}
+#hero .follow{
+    display: inline-block;
+    
+}
+#hero .follow ul li  i {
+    color: var(--text-color);
+    border-radius: 50%;
+    background-color: #F4F3F3; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right:16px ;
+    width: 40px;
+    height: 40px; 
+    transition: 0.5s;
+    color: #000;
+}
+#hero .follow ul li  i:hover{
+    background-color: var(--text-color);
+    color: #FFCC00 ;
+}
+#hero .follow ul  li h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    margin-right: 45px;
+}
+#hero .mouse{
+    transform: translateX(100%);
+}
+#hero  .about_img{
+    width:50%;
+    transform: translateX(100px); 
+}
+/* hero Section  end */
+/* about Section  start */
+#about {  
+    background: linear-gradient(130deg, #fc0 0%, #faffcb 100%, #faffcb 100%);
+}
+.about_img{
+    width: 50%;
+}
+.about_info{
+    width: 50%;
+}
+.about_info h3{
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 50px;
+}
+.about_info p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    margin-top: 26px;
+    color: var(--font-color);
+}
+.about_info a{
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--font-color);
+    padding: 17px ;
+    display: block;
+    text-align: center;
+    margin-top: 45px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 171px;
+    height: 66px;
+    transition: .4s;
+}
+#about .about_info a:hover{
+    background: var(--hover-color);
+}
+/* about Section  end */
+/* Services Section  start */
+#services{
+    padding: 151px 0;
+}
+#services .services_container{
+    gap: 30px;
+}
+#services .services_card{
+    width: calc((100% / 3) - 60px);
+    border-radius: 20px;
+    width: 350px;
+    height: 367px;
+    text-align: center;
+    display: block;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: var(--hover-color);
+    padding: 39px 0;
+}
+#services .services_card .services_icon img{
+    width: 100%;
+    display: inline-block;
+}
+#services .services_card .services_icon{
+    text-align: center;
+    width: 78px;
+   margin: auto;  
+}
+#services .services_card h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    text-align: center;
+    color: var(--font-color);
+    padding: 14px;
+    font-size: 22px;
+    line-height: 180%;
+}
+#services .services_card p{
+    font-family: var(--font-family);
+    line-height: 190%;
+    text-align: center;
+    color: #7a7a7a;
+    padding: 0 50px;
+}
+/* Services Section  end */
+/* design Section  start */
+#design .container{
+    border-radius: 30px;
+    height: 500px;
+}
+#design .design_container .design_img{
+    display:block;
+}
+.design_info{
+   width: 50%;
+    margin-top: 83px;
+}
+.design_info p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    margin-top: 26px;
+    color: var(--font-color);
+    padding-right: 10%;
+}
+.design_info a{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color:var(--font-color);
+    padding: 17px ;
+    display: block;
+    text-align: center;
+    margin-top: 45px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 171px;
+    height: 66px;
+    transition: .4s;
+}
+.design_info a:hover{
+    background: var(--hover-color);
+}
+/* design Section  end */
+
+
+
